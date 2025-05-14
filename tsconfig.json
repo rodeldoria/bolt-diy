@@ -1,4 +1,4 @@
-{
+﻿{
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "types": [
@@ -22,8 +22,13 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./app/*"]
+      "@/*": ["app/*"]
     },
+
+  "exclude": [
+    "build",
+    "functions/[[path]].ts"
+  ],
     // vite takes care of building everything, not tsc
     "noEmit": true
   },
@@ -36,3 +41,4 @@
     "**/.client/**/*.tsx"
   ]
 }
+
